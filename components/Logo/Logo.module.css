@@ -1,0 +1,103 @@
+.logo_container{
+    /* background-color: black; */
+    padding: 1rem;
+}
+
+.logo{
+    position:relative;
+    width:120px;
+    height:120px;
+}
+
+/* حلقه‌ها */
+.ring{
+    position:absolute;
+    width:100%;
+    height:100%;
+    border-radius:50%;
+
+    background:conic-gradient(
+        red 0deg 70deg,
+        transparent 70deg 110deg,
+        cyan 110deg 180deg,
+        transparent 180deg 220deg,
+        lime 220deg 290deg,
+        transparent 290deg 330deg,
+        violet 330deg 360deg
+    );
+
+    -webkit-mask: radial-gradient(circle, transparent 66%, black 72%);
+    mask: radial-gradient(circle, transparent 66%, black 72%);
+
+    animation:spin 4s linear infinite;
+
+    filter:
+        drop-shadow(0 0 6px red)
+        drop-shadow(0 0 10px cyan)
+        drop-shadow(0 0 14px lime)
+        drop-shadow(0 0 18px violet);
+}
+
+.ring:nth-child(2){
+    width:90px;
+    height:90px;
+    top:15px;
+    left:15px;
+    animation:spinReverse 3s linear infinite;
+}
+
+.ring:nth-child(3){
+    width:60px;
+    height:60px;
+    top:30px;
+    left:30px;
+    animation:spin 2s linear infinite;
+}
+
+/* آیکون تصویر */
+.wallpaper_icon{
+    position:absolute;
+    width:36px;
+    height:28px;
+    border:2px solid #fff;
+    border-radius:4px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    box-shadow:0 0 10px cyan,0 0 20px cyan;
+}
+
+.wallpaper_icon::before{
+    content:"";
+    position:absolute;
+    width:6px;
+    height:6px;
+    background:yellow;
+    border-radius:50%;
+    top:4px;
+    right:4px;
+    box-shadow:0 0 6px yellow;
+}
+
+.wallpaper_icon::after{
+    content:"";
+    position:absolute;
+    bottom:3px;
+    left:4px;
+    width:0;
+    height:0;
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+    border-bottom:12px solid #00ffcc;
+    filter:drop-shadow(0 0 6px #00ffcc);
+}
+
+@keyframes spin{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+}
+
+@keyframes spinReverse{
+    from{transform:rotate(360deg);}
+    to{transform:rotate(0deg);}
+}

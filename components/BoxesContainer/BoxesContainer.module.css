@@ -1,0 +1,11 @@
+.BoxesContainer{
+    background-color: #263238;
+}
+
+.BoxesContainer_container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 1rem 0;
+}

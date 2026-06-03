@@ -1,0 +1,47 @@
+const db = {
+    wallpapers:[
+        {
+            name:'lantern.JPG',
+            category:'art',
+        },
+        {
+            name:'nature.JPG',
+            category:'nature',
+        },
+        {
+            name:'sky.JPG',
+            category:'space',
+        },
+        {
+            name:'space.JPG',
+            category:'space',
+        },
+        {
+            name:'apple.JPG',
+            category:'art',
+        },
+        {
+            name:'art.JPG',
+            category:'art',
+        },
+        {
+            name:'rain.JPG',
+            category:'rain',
+        },
+        {
+            name:'nature2.JPG',
+            category:'nature',
+        },
+        {
+            name:'art2.JPG',
+            category:'art',
+        },
+        {
+            name:'art3.JPG',
+            category:'art',
+        },
+    ],
+    categories:['space','nature','art'],
+}
+
+export default db;

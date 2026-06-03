@@ -1,0 +1,73 @@
+.pages{
+    position: fixed;
+    bottom: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* background-color: blueviolet; */
+}
+
+.pages_container{
+    display: flex;
+    justify-content: center;
+}
+
+.pages_centeContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: #00BCD4;
+    border-radius: 1.5rem;
+    padding: 0.5rem 0.5rem;
+    box-shadow: 0 3px 5 0 gray;
+
+}
+
+.pages_favorites{
+    background-color: #80DEEA;
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 3px 3 0 gray;
+    transition: all 400ms ease;
+    font-size: 1.5rem;
+    
+}
+.pages_favorites:hover{
+    background-color:#5E35B1 ;
+    color: #EA80FC;
+    
+}
+
+.pages_home{
+    background-color: #80DEEA;
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 3px 3 0 gray;
+    transition: all 400ms ease;
+    font-size: 1.5rem;
+}
+.pages_home:hover{
+    background-color:#5E35B1 ;
+    color: #EA80FC;
+}
+
+.pages_categories{
+    background-color: #80DEEA;
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 3px 3 0 gray;
+    transition: all 400ms ease;
+    font-size: 1.5rem;
+}
+.pages_categories:hover{
+    background-color:#5E35B1 ;
+    color: #EA80FC;
+}
+
+.selected{
+    /* background-color: #651FFF; */
+    /* color: wheat; */
+    background-color:#5E35B1 ;
+    color: #EA80FC;
+}
