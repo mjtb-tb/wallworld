@@ -4,7 +4,8 @@ import BoxesContainer from "@/components/BoxesContainer/BoxesContainer"
 
 export async function getStaticProps(){
     try{
-        const response = await fetch('http://localhost:3000/api/wallpapers')
+        // const response = await fetch('http://localhost:3000/api/wallpapers')
+        const response = await fetch('https://wallworld.onrender.com/api/wallpapers')
         if(!response.ok){
             throw new Error('failed to fetch')
         }
