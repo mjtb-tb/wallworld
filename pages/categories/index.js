@@ -14,7 +14,8 @@ export async function getStaticProps(){
                 data,
                 error:false,
                 message:'everything is ok'
-            }
+            },
+            revalidate: 60
         }
     }catch(err){
         return {
