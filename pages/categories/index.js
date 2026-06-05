@@ -23,7 +23,8 @@ export async function getStaticProps(){
                 data:[],
                 error:true,
                 message:'there is a problem'
-            }
+            },
+            revalidate:60,
         }
     }
 }
