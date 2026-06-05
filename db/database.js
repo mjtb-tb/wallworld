@@ -17,7 +17,7 @@ const db = {
             category:'space',
         },
         {
-            name:'apple.JPG',
+            name:'apple.jpg',
             category:'art',
         },
         {
