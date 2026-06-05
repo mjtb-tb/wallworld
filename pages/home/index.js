@@ -39,7 +39,6 @@ export default function Home(p){
             <Landing></Landing>
             <Slidebar></Slidebar>
             <BoxesContainer data={p.data} error={p.error} message={p.message}></BoxesContainer>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa animi perspiciatis corrupti debitis vero aspernatur voluptas dolorum consequatur, nesciunt obcaecati explicabo fugiat perferendis dolor voluptate? Ab soluta veniam quis, quibusdam laudantium atque quia amet perferendis minus architecto impedit nemo temporibus officia harum. Necessitatibus saepe vitae voluptatibus consequatur alias quidem veniam.</div>
         </>
     )
 }

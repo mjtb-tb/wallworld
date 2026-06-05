@@ -1,0 +1,99 @@
+.CategoryBox_container{
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    background-color: #212121;
+}
+
+.category_card{
+    position:relative;
+    width:280px;
+    height:380px;
+    border-radius:20px;
+    overflow:hidden;
+    /* cursor:pointer; */
+    transition:0.4s ease;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* تصویر */
+.card_bg{
+    position:absolute;
+    inset:0;
+    /* background:url("http://localhost:3000/categories/art") center/cover no-repeat; */
+    transform:scale(1.1);
+    filter:blur(6px) contrast(120%) saturate(140%);
+    transition:0.5s ease;
+}
+
+/* لایه بنفش */
+.card_bg::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:#7C4DFF;
+    mix-blend-mode:color;
+    transition:0.4s ease;
+}
+
+/* RGB Glow */
+.category_card::after{
+    content:"";
+    position:absolute;
+    inset:-3px;
+    border-radius:22px;
+    background:linear-gradient(45deg, red, cyan, lime, violet, red);
+    z-index:-1;
+    filter:blur(15px);
+    opacity:0;
+    transition:0.4s;
+}
+
+/* محتوا */
+.card_content{
+    position:absolute;
+    bottom:25px;
+    left:20px;
+    color:white;
+    z-index:2;
+    opacity:1; /* ✅ همیشه دیده میشه */
+}
+
+.card_content h3{
+    margin:0 0 10px;
+    font-size:24px;
+}
+
+.card_content button{
+    padding:8px 18px;
+    border:none;
+    border-radius:20px;
+    background:linear-gradient(45deg, cyan, violet);
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.card_content button:hover{
+    transform:scale(1.08);
+}
+
+/* Hover */
+.category_card:hover{
+    transform:translateY(-10px) scale(1.03);
+}
+
+.category_card:hover .card_bg{
+    filter:contrast(110%) saturate(120%);
+}
+
+.category_card:hover .card_bg::after{
+    opacity:0;
+}
+
+.category_card:hover::after{
+    opacity:1;
+}

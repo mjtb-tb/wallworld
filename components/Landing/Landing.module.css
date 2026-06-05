@@ -3,6 +3,7 @@
     background-position: center;
     /* background-attachment: fixed; */
     background-size: cover;
+    height: 180px;
 }
 
 .landing_container{

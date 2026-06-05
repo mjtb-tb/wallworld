@@ -20,11 +20,18 @@ export default function WallpaperBox({name,category}){
         setIsFavorite(favorite)
     }
 
+    function downloadFile() {
+    const link = document.createElement("a")
+    link.href = `/wallpapers/${name}`
+    link.download = name
+    link.click()
+    }
+
    return (
         <>
             <div className={styles.WallpaperBox}>
                 <div className={styles.WallpaperBox_container}>
-                    <div className={styles.WallpaperBox_downloadBtn}>
+                    <div onClick={()=>downloadFile()} className={styles.WallpaperBox_downloadBtn}>
                         <FaDownload />
                     </div>
                     <div onClick={()=>clickHandler()} className={isFavorite?styles.WallpaperBox_favoriteBtn_selected:styles.WallpaperBox_favoriteBtn}>

@@ -4,12 +4,12 @@ import WallpaperBox from '../WallpaperBox/WallpaperBox';
 
 
 
-export default function BoxesContainer({data,error,message}){
+export default function BoxesContainer({data,error,message,backgroundColor='#263238'}){
 
     console.log(data)
     return (
         <>
-            <div className={styles.BoxesContainer}>
+            <div style={{backgroundColor:backgroundColor}} className={styles.BoxesContainer}>
                 <div className={styles.BoxesContainer_container}>
                     {
                         error?(

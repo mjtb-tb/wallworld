@@ -1,19 +1,19 @@
 const db = {
     wallpapers:[
         {
-            name:'lantern.JPG',
+            name:'lantern.jpg',
             category:'art',
         },
         {
-            name:'nature.JPG',
+            name:'nature.jpg',
             category:'nature',
         },
         {
-            name:'sky.JPG',
+            name:'sky.jpg',
             category:'space',
         },
         {
-            name:'space.JPG',
+            name:'space.jpg',
             category:'space',
         },
         {
@@ -21,15 +21,15 @@ const db = {
             category:'art',
         },
         {
-            name:'art.JPG',
+            name:'art.jpg',
             category:'art',
         },
         {
-            name:'rain.JPG',
+            name:'rain.jpg',
             category:'rain',
         },
         {
-            name:'nature2.JPG',
+            name:'nature2.jpg',
             category:'nature',
         },
         {
@@ -37,7 +37,7 @@ const db = {
             category:'art',
         },
         {
-            name:'art3.JPG',
+            name:'art3.jpg',
             category:'art',
         },
     ],
